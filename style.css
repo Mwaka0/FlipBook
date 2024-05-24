@@ -46,11 +46,12 @@ body {
 .front {
 	z-index: 1;
 	backface-visibility: hidden;
-	border-left: 3px solid black;
+	border-left: 1px solid black;
 }
 
 .back {
 	z-index: 0;
+	border-left: 1px solid black;
 }
 
 .front-content, .back-content {
