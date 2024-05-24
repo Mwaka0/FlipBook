@@ -16,12 +16,20 @@ body {
 
 /* Book */
 .book {
+	border: 1px solid black;
+	position: relative;
+	width: 350px;
+	height: 500px;
+}
+
+.paper {
 	border: 1px solid red;
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
+
 }
 
 .front, .back {
@@ -47,4 +55,25 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+/* Controller Buttons */
+button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	margin: 10px;
+}
+
+button:focus {
+	outline: none;
+}
+
+button:hover {
+	color: #636363;
+}
+
+i {
+	font-size: 50px;
+	color: grey;
 }
