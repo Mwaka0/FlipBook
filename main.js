@@ -1,0 +1,50 @@
+// References to DOM Elements
+const prevBtn = document.querySelector("#prev-btn");
+const nextBtn = document.querySelector("#next-btn");
+const book = document.querySelector("#book");
+
+const paper1 = document.querySelector("#p1");
+const paper2 = document.querySelector("#p2");
+const paper3 = document.querySelector("#p3");
+
+// Event Listeners
+prevBtn.addEventListener("click", goPrevPage);
+nextBtn.addEventListener("click", goNextPage);
+
+// Buisness Logic
+let currentLocation = 1;
+let numOfPapers = 3;
+let maxLoaction = numOfPapers + 1;
+
+function openBook() {
+
+}
+
+function closeBook() {
+
+}
+
+function goNextPage() {
+    if(currentLocation < maxLoaction) {
+        switch(currentLocation) {
+            case 1:
+                openBook()
+                paper1.classList.add("flipped");
+                break;
+            case 2:
+                paper2.classList.add("flipped");
+                break;
+            case 3:
+                paper3.classList.add("flipped")
+                closeBook();
+                break;
+            default:
+                throw new Error("Unknown error has ocuured");
+        }
+        currentLocation++;
+    }
+}
+
+function goPrevPage() {
+
+}
